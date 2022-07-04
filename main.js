@@ -14,7 +14,7 @@ function newRoast () {
 }
 
 function renderCoffee(coffee) {
-    var html = `<div class="coffee col-6"><div class="fs-4 fw-bold">${coffee.name}</div><div class="fs-6 text-muted">${coffee.roast}</div></div>`
+    var html = `<div class="coffee col-12 col-sm-12 col-md-6 col-lg-6 col-xxl-6"><div class="fs-4 fw-bold">${coffee.name}</div><div class="fs-6 text-muted">${coffee.roast}</div></div>`
 
     return html;
 }
