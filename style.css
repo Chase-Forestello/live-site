@@ -1,0 +1,50 @@
+/* row color */
+div.row {
+    border: 1px dashed blue;
+}
+/* cell color */
+div.row > div {
+    border: 1px solid red;
+}
+div.tall-row {
+    height: 300px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+tbody {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+#coffeeName {
+    width: 100%;
+}
+h3 {
+    text-align: center;
+}
+input {
+    border-radius: 5px;
+}
+#coffees {
+    display: flex;
+    flex-wrap: wrap;
+}
+section {
+    margin: 0;
+}
+
+footer {
+    border-top: 1px solid grey;
+}
+.coffee {
+    color: rgba(180, 82, 21, 0.62);
+    font-family: 'Playfair Display', sans-serif;
+}
+header {
+    font-family: 'Raleway', sans-serif;
+}
+.sub-header {
+    font-family: 'Raleway', sans-serif;
+}
