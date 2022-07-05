@@ -1,8 +1,9 @@
 "use strict"
 // var roastSelector = document.querySelector('#roast-selection'); I don't think we need this.
 var section = document.getElementById('coffees');
-var submitButton = document.getElementById('submit');
+var submitButton1 = document.getElementById('submit1');
 var submitButton2 = document.getElementById('submit2');
+var deleteCoffee = document.getElementById('submit3')
 var roastSelection = document.getElementById('roast-selection');
 var names = document.getElementsByClassName("coffee");
 var selectedCreatedRoast = document.getElementById('createRoast')
@@ -11,35 +12,53 @@ var newDrink = document.getElementById('createCoffee');
 
 
 console.log(`Search roast: ${roastSelection.value}`);
-console.log(`Created roast: ${selectedCreatedRoast}`);
+console.log(`Created roast: ${selectedCreatedRoast.value}`);
 function newRoast () {
     console.log(`Created roast: ${selectedCreatedRoast.value}`);
 }
-function newCoffeeName () {
 
-    console.log(newDrink.value);
+function feelingLucky (e) {
+    e.preventDefault();
+    var randomCoffee = Math.floor(Math.random() * coffees.length)
+    console.log(randomCoffee);
+    section.innerHTML = renderCoffees(coffees, randomCoffee);
 }
+
 function pushCoffee (e) {
     var newCoffee = {id: selectedCreatedRoast.value, name: newDrink.value, roast: `<i class="${selectedCreatedRoast.value} fa-solid fa-mug-hot"></i>`};
     e.preventDefault();
-    coffees.push(newCoffee);
-    console.log(newCoffee);
+    if (newCoffee.name.length === 0) {
+        alert('You must enter a name');
+    } else {
+        coffees.push(newCoffee);
+        console.log(newCoffee.name.length);
+        section.innerHTML = renderCoffees(coffees);
+    }
+}
+
+function popCoffee (e) {
+    e.preventDefault();
+    coffees.pop();
     section.innerHTML = renderCoffees(coffees);
-
-
 }
 
 
-function renderCoffee(coffee) {
+function renderCoffee(coffee, specialIndex) {
     return `<div class="coffee col-12 col-sm-12 col-md-12 col-lg-6 col-xxl-6">
-                    <div class="card fs-4 fw-bold text-nowrap text-center p-3 m-2 b-1" style="border-radius: 1em"><span>${coffee.name} ${coffee.roast}</span></div>
+                    <div class="card fs-4 fw-bold text-nowrap text-center ${specialIndex} p-3 m-2 b-1" style="border-radius: 1em">
+                        <span>${coffee.name} ${coffee.roast}</span>
+                    </div>
                 </div>`;
 }
 
-function renderCoffees(coffees) {
+function renderCoffees(coffees, luckyIndex = -1) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
-        html += renderCoffee(coffees[i]);
+        if (i === luckyIndex) {
+            html += renderCoffee(coffees[i], 'luckyCoffee')
+        } else {
+            html += renderCoffee(coffees[i], "")
+        }
     }
     return html;
 }
@@ -104,8 +123,8 @@ var coffees = [
 
 section.innerHTML = renderCoffees(coffees.reverse());
 
-submitButton.addEventListener('click', updateCoffees);
+submitButton1.addEventListener('click', feelingLucky);
 submitButton2.addEventListener('click', pushCoffee,);
 roastSelection.addEventListener('change', updateCoffees);
 selectedCreatedRoast.addEventListener('change', newRoast);
-newDrink.addEventListener('change', newCoffeeName);
+deleteCoffee.addEventListener('click', popCoffee);
