@@ -43,9 +43,6 @@
                             <table>
                                 <tbody class="col align-center d-md-flex d-lg-flex d-xl-flex d-block d-sm-block" id="coffees"></tbody>
                             </table>
-                            <div class="col">
-                                <img class="roastLevel" src="coffee-roast-level-icon-set-vector-illustration-coffee-beans-isolated-white-background_547674-82.jpg">
-                            </div>
                         </div>
                         <div class="col-6">
                             <div class="row">
@@ -55,10 +52,13 @@
                                             <label for="roast-selection">Roast</label>
                                             <select id="roast-selection" class="form-select">
                                                 <option selected id="all">all</option>
-                                                <option>light</option>
-                                                <option>medium</option>
-                                                <option>dark</option>
+                                                <option value="light">light</option>
+                                                <option value="medium">medium</option>
+                                                <option value="dark">dark</option>
                                             </select>
+                                            <div class="col">
+                                                <span>Light: <i class="light fa-solid fa-mug-hot"></i> &nbsp&nbsp&nbsp Medium: <i class="medium fa-solid fa-mug-hot"></i> &nbsp&nbsp&nbsp Dark: <i class="dark fa-solid fa-mug-hot"></i> </span>
+                                            </div>
                                         </div>
                                         <div class="col-12">
                                             <label for="coffeeName">Coffee Name or Roast</label>
