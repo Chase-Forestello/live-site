@@ -66,3 +66,6 @@ header {
 .roastLevel {
     width: 55%;
 }
+.coffeeList {
+    display: inline-table;
+}
