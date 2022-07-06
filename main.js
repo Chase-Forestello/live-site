@@ -45,7 +45,7 @@ function popCoffee (e) {
 
 function renderCoffee(coffee, specialIndex) {
     return `<div class="coffee card-container col-md-6 col-lg-4 col-xxl-3 pt-1">
-                    <div class="card m-1 card-flip" style="height: 60%">
+                    <div class="card m-1 card-flip" style="height: 65%">
                     <div class="front card-block">
                     <div class="fs-5 fw-bold text-nowrap card-text text-center ${specialIndex} m-2 b-1">
                         <span>${coffee.name} ${coffee.roast}</span>

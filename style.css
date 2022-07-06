@@ -34,11 +34,15 @@ footer {
     color: rgba(180, 82, 21, 0.62);
     font-family: 'Playfair Display', sans-serif;
 }
+nav {
+    width: 100%;
+}
 header {
     font-family: 'Raleway', sans-serif;
     background-image: url("Light-Medium-Dark-Roast-Beans-2500_2500x.jpg");
     background-size: cover;
     color: #fdf3e0;
+    width: 100%;
 }
 .sub-header {
     font-family: 'Raleway', sans-serif;
@@ -84,7 +88,6 @@ header {
 }
 .luckyCoffee{
     z-index: 1000;
-    background-color: rgba(236, 177, 147, 0.48) !important;
 }
 .card-container {
     perspective: 700px;
