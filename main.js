@@ -52,7 +52,7 @@ function renderCoffee(coffee, specialIndex) {
                     </div>
                     </div>
                     <div class="back card-block">
-                        <p class="text-center p-4 m-2 b-1">${coffee.description}</p>
+                        <p class="text-center fw-bold">${coffee.description}</p>
                     </div>
                     </div>
                     </div>

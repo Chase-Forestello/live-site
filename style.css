@@ -137,11 +137,11 @@ header {
 .back {
     font-size: 12px;
     position: relative;
-    bottom: 6em;
+    bottom: 3em;
 }
 .card-text {
     position: relative;
-    top: 2em;
+    top: 1em;
 }
 .rotate {
     animation: rotation 3s ease-in-out;
