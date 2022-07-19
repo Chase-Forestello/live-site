@@ -294,7 +294,7 @@ div.clickEffect{
     left:0;
     right:0;
     bottom:0;
-    height: 62em;
+    height:62em;
     display:block;
 }
 
@@ -312,6 +312,6 @@ div.clickEffect{
 .clouds{
     background:transparent url(img/clouds.png) repeat top center;
     z-index:-1;
-    opacity: .4;
+    opacity: 0.5;
     animation:move-clouds-back 200s linear infinite;
 }
