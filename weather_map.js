@@ -238,7 +238,7 @@
     let h1 = document.getElementById("h1");
     h1.addEventListener("click", function(){
         // h1.setAttribute("href", "\"https://github.com\"");
-        window.location = "https://www.spacex.com/launches/"
+        window.location = "https://www.heb.com/?utm_medium=cpc&utm_source=google&utm_campaign=search&utm_content=core&gclid=Cj0KCQjw8uOWBhDXARIsAOxKJ2GPy2bb0jUNYXa-7HnjGtb2iaDCK34WqnyW1HcKKKR573QeHnd-5PIaAkIKEALw_wcB"
     })
 
 })();
