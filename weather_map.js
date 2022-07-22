@@ -33,12 +33,12 @@
         })
         map.addControl(new mapboxgl.GeolocateControl());
         map.addControl(new mapboxgl.NavigationControl());
-        map.addControl(
-            new MapboxDirections({
-                accessToken: mapboxgl.accessToken
-            }),
-            'top-left'
-        );
+        // map.addControl(
+        //     new MapboxDirections({
+        //         accessToken: mapboxgl.accessToken
+        //     }),
+        //     'top-left'
+        // );
     });
     // OpenWeather API call
     let queryParams = new URLSearchParams({
