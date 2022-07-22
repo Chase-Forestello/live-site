@@ -7,7 +7,7 @@
     flex-wrap: nowrap;
     align-items: center;
     font-family: 'Roboto Mono', monospace;
-
+    border: solid black 3px;
 }
 hr {
     margin-top: 1em!important;
@@ -36,4 +36,20 @@ hr {
     color: #820413;
     font-weight: lighter;
     /*background-color: rgba(210, 205, 204, 0.34);*/
+}
+.signin-button {
+    width: 210px;
+    height: 40px;
+}
+.g_id_signin {
+    width: 210px;
+    height: 40px;
+}
+.fb-login-button {
+    width: 210px;
+    height: 40px;
+}
+.signIn {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
