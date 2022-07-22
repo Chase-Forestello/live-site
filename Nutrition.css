@@ -1,0 +1,39 @@
+#mainPage {
+    background-image: url("various-pantry-products-leaves-wooden-spoons_23-2148796323.jpeg");
+    background-size: cover!important;
+    background-position: center;
+    background-repeat: space;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+
+}
+hr {
+    margin-top: 1em!important;
+    width: 75%!important;
+    height: 3px!important;
+    border: none;
+    color: black;
+
+}
+#mainHeader {
+    margin-top: 1.5em;
+    font-size: 5em;
+    color: #820413;
+    font-family: 'Dancing Script', cursive;
+}
+#mainBio {
+    margin-top: 2em;
+    font-size: 1.5em;
+    color: #820413;
+    font-weight: lighter;
+    /*background-color: rgba(210, 205, 204, 0.34);*/
+}
+#mainFooter {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #820413;
+    font-weight: lighter;
+    /*background-color: rgba(210, 205, 204, 0.34);*/
+}
