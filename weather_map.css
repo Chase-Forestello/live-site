@@ -295,7 +295,7 @@ div.clickEffect{
     left:0;
     right:0;
     bottom:0;
-    height:62em;
+    height:100vh;
     display:block;
 }
 
